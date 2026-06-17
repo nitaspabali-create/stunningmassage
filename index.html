@@ -103,7 +103,23 @@ margin-bottom:10px;
 font-family:'Cormorant Garamond',serif;
 font-size:2rem;
 }
+.treatment-card {
+        position: relative;
+        background: #fff;
+        border-radius: 28px;
+        overflow: hidden;
+    }
 
+.treatment-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: #d4b06a;
+    }
+  
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
